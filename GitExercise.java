@@ -1,10 +1,10 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class GitExercise {
     public static void main(String[] args) {
         int elements;
         int numbers[];
-        String words[];
 
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the number of elements");
@@ -20,5 +20,14 @@ public class GitExercise {
         for (int num : numbers) {
             System.out.print(num + " ");
         }
+
+        Arrays.sort(numbers);
+
+        System.out.print("\nSorted numbers: ");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
     }
+
+
 }
