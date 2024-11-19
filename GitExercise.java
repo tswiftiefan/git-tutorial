@@ -9,7 +9,7 @@ public class GitExercise {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the number of elements");
         elements = s.nextInt();
-        words = new String[elements];
+        words = new String[elements]; // number of elements initializes the size of the array
 
         System.out.println("Enter " + elements + " words");
         for (int i=0; i < elements; i++){
