@@ -10,6 +10,7 @@ public class GitExercise {
         System.out.println("Enter the number of elements");
         elements = s.nextInt();
         numbers = new int[elements];
+        words = new String[elements];
 
         System.out.println("Enter " + elements + " numbers");
         for (int i=0; i < elements; i++){
@@ -19,6 +20,16 @@ public class GitExercise {
         System.out.print("You entered: ");
         for (int num : numbers) {
             System.out.print(num + " ");
+        }
+
+        System.out.println("\nEnter " + elements + " words");
+        for (int i=0; i < elements; i++){
+            words[i] = s.next();
+        }
+
+        System.out.print("You entered: ");
+        for (String word : words) {
+            System.out.print(word + " ");
         }
     }
 }
